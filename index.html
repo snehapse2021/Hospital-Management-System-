@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Patient Record Management System</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            background-image: url(https://media.istockphoto.com/id/940993008/vector/abstract-geometric-medical-cross-shape-medicine-and-science-concept-background.jpg?s=612x612&w=0&k=20&c=K6wREAMiRA3V-OGFDFxls9iZZCgL39kwKPxeQEUwT38=);
+            font-family: Arial, sans-serif;
+            background-size: 100%;
+        }
+        
+        .container {
+            background-color: #82e2e2;
+            background-image: url(https://st4.depositphotos.com/3441621/28233/i/600/depositphotos_282336788-stock-photo-smiling-medical-doctor-woman-with.jpg);
+            background-size: 100%;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+        
+        h1 {
+            color: #060101e0;
+            text-align: center;
+            text-decoration: solid;
+            font-size: 50px;
+        }
+        
+        button {
+            display: block;
+            width: 200px;
+            height: 50px;
+            margin: 10px auto;
+            font-size: 16px;
+            color: #fff;
+            background-color: #4CAF50;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #45a049;
+        }
+        
+        ul {
+            margin-top: 40px;
+            text-align: center;
+        }
+        
+        li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        
+        li a {
+            font-size: 18px;
+            color: #333;
+            text-decoration: none;
+        }
+        
+        li a:hover {
+            color: #4CAF50;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Hospital Management System</h1>
+        <button onclick="addRecord()">Add Record</button>
+        <button onclick="displayRecords()">Display Records</button>
+        <button onclick="modifyRecord()">Modify Record</button>
+        <button onclick="deleteRecord()">Delete Record</button>
+        <button onclick="searchRecord()">Search Record</button>
+
+    </div>
+    <ul>
+        <li><a href="add.php">Add Record</a></li>
+        <li><a href="display.php">Display Records</a></li>
+        <li><a href="modify.php">Modify Records</a></li>
+        <li><a href="delete.php">Delete Record</a></li>
+        <li><a href="search.php">Search Record</a></li>
+    </ul>
+
+
+    <script>
+        function addRecord() {
+            // Redirect to add record page
+            window.location.href = "add.php";
+        }
+
+
+
+        function displayRecords() {
+            // Redirect to display records page
+            window.location.href = "display.php";
+        }
+
+        function modifyRecord() {
+            // Redirect to modify record page
+            window.location.href = "modify.php";
+        }
+
+        function deleteRecord() {
+            // Redirect to modify record page
+            window.location.href = "delete.php";
+        }
+
+        function searchRecord() {
+            // Redirect to modify record page
+            window.location.href = "search.php";
+        }
+    </script>
+</body>
+
+</html>
